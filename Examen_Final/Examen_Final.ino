@@ -92,7 +92,7 @@ void calculo_R() {
     Vout = (dato2 / 1024.0);
     dato2 = (Vcc / Vout) - 1;
     R1 = dato2 * R2;
-    lec_resist = (R1 / 19.0);
+    lec_resist = R1;
     Serial.println(lec_resist.);
     if (Serial.available() > 0)
     { //Si el dato contiene información
